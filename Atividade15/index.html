@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pesquisa de Opinião - Verde</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-card">
+      <header>
+        <h2>Deixe seu Feedback</h2>
+        <p>Sua opinião é muito importante para nós.</p>
+      </header>
+
+      <form name="formularioContato" onsubmit="return validar();" action="#">
+        <div class="input-box">
+          <label for="nome">Nome Completo:</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Mínimo 10 caracteres"
+          />
+        </div>
+
+        <div class="input-box">
+          <label for="email">E-mail Profissional:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="exemplo@dominio.com"
+          />
+        </div>
+
+        <div class="input-box">
+          <label for="comentario">Seu Comentário:</label>
+          <textarea
+            id="comentario"
+            name="comentario"
+            rows="20"
+            cols="50"
+            placeholder="Conte-nos sua experiência (mínimo 20 caracteres)..."
+          ></textarea>
+        </div>
+
+        <div class="input-box">
+          <label class="label-pergunta"
+            >Você já visitou esta página antes?</label
+          >
+          <div class="options-container">
+            <label class="radio-label">
+              <input type="radio" name="pesquisa" value="sim" />
+              <span>Sim, já visitei</span>
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="pesquisa" value="nao" />
+              <span>Não, é a primeira vez</span>
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" id="btnEnviar">Enviar Formulário</button>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
